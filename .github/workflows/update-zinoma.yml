@@ -29,8 +29,6 @@ jobs:
           apt-ftparchive release . > Release
           gpg --default-key "florent.becart@gmail.com" -abs -o - Release > Release.gpg
           gpg --default-key "florent.becart@gmail.com" --clearsign -o - Release > InRelease
-
-          erb -T - version=${{ env.ZINOMA_VERSION }} FormulaTemplates/zinoma.rb.erb > HomebrewFormula/zinoma.rb
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4.2.0
         with:
