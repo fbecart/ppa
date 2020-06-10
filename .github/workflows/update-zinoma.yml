@@ -1,0 +1,40 @@
+name: update-zinoma
+on:
+  repository_dispatch:
+    types: [zinoma-release]
+jobs:
+  update-zinoma:
+    runs-on: ubuntu-latest
+    env:
+      ZINOMA_VERSION: ${{ github.event.client_payload.version }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Import GPG key
+        id: import_gpg
+        uses: crazy-max/ghaction-import-gpg@v2
+        env:
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+      - name: Add new packages
+        working-directory: debian
+        run: |
+          wget https://github.com/fbecart/zinoma/releases/latest/download/zinoma_${{ env.ZINOMA_VERSION }}_amd64.deb
+          wget https://github.com/fbecart/zinoma/releases/latest/download/zinoma_${{ env.ZINOMA_VERSION }}_i386.deb
+
+          # Packages & Packages.gz
+          dpkg-scanpackages --multiversion . > Packages
+          gzip -k -f Packages
+
+          # Release, Release.gpg & InRelease
+          apt-ftparchive release . > Release
+          gpg --default-key "florent.becart@gmail.com" -abs -o - Release > Release.gpg
+          gpg --default-key "florent.becart@gmail.com" --clearsign -o - Release > InRelease
+
+          erb -T - version=${{ env.ZINOMA_VERSION }} FormulaTemplates/zinoma.rb.erb > HomebrewFormula/zinoma.rb
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4.2.0
+        with:
+          branch: master
+          commit_message: Update Žinoma to version ${{ env.ZINOMA_VERSION }}
+          tagging_message: zinoma-${{ env.ZINOMA_VERSION }}
+          commit_user_name: Florent Bécart
