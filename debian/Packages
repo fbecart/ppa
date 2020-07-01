@@ -158,3 +158,43 @@ Standards-Version: 3.9.4
 Vcs-Browser: https://github.com/fbecart/zinoma
 Vcs-Git: https://github.com/fbecart/zinoma
 
+Package: zinoma
+Version: 0.17.0
+Architecture: i386
+Maintainer: Florent Bécart <florent.becart@gmail.com>
+Installed-Size: 3262
+Filename: ./zinoma_0.17.0_i386.deb
+Size: 1039024
+MD5sum: 7ba4f7b9659d1313e4322fdfebe818f7
+SHA1: f716b6da9fe0773f83dd945b700bbcd3f68a763d
+SHA256: a1a3e29e2583ae36926ee3f3df8295b4476db17512dadaa5803c008f9256fa4e
+Section: utils
+Priority: optional
+Homepage: https://github.com/fbecart/zinoma
+Description: Žinoma - Make your build flow incremental
+ Žinoma provides a simple command line to execute your most common build flows
+ in the most efficient way.
+Standards-Version: 3.9.4
+Vcs-Browser: https://github.com/fbecart/zinoma
+Vcs-Git: https://github.com/fbecart/zinoma
+
+Package: zinoma
+Version: 0.17.0
+Architecture: amd64
+Maintainer: Florent Bécart <florent.becart@gmail.com>
+Installed-Size: 3912
+Filename: ./zinoma_0.17.0_amd64.deb
+Size: 1134924
+MD5sum: 0ea60cf8ef22ef88cdee3ed78515ff5c
+SHA1: 54079cd396cfba7456d4ea144ab424379f34c0dd
+SHA256: d01435fb72a701af3c70764e706190396cfa4b0fa8cd398a0d011f91edb5d55a
+Section: utils
+Priority: optional
+Homepage: https://github.com/fbecart/zinoma
+Description: Žinoma - Make your build flow incremental
+ Žinoma provides a simple command line to execute your most common build flows
+ in the most efficient way.
+Standards-Version: 3.9.4
+Vcs-Browser: https://github.com/fbecart/zinoma
+Vcs-Git: https://github.com/fbecart/zinoma
+
