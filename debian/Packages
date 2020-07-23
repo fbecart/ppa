@@ -1,25 +1,5 @@
 Package: zinoma
 Version: 0.15.1
-Architecture: amd64
-Maintainer: Florent Bécart <florent.becart@gmail.com>
-Installed-Size: 3525
-Filename: ./zinoma_0.15.1_amd64.deb
-Size: 1036292
-MD5sum: f1cc0ef4a773940002d54bb6cd3be066
-SHA1: 7d7a0ddd7d48d5f84b1485f27769c51c8dbfffd7
-SHA256: 87e90e8e696686db11b90de625f5fa985c67deb5738693ceed33e94b45156e00
-Section: utils
-Priority: optional
-Homepage: https://github.com/fbecart/zinoma
-Description: Žinoma - Make your build flow incremental
- Žinoma provides a simple command line to execute your most common build flows
- in the most efficient way.
-Standards-Version: 3.9.4
-Vcs-Browser: https://github.com/fbecart/zinoma
-Vcs-Git: https://github.com/fbecart/zinoma
-
-Package: zinoma
-Version: 0.15.1
 Architecture: i386
 Maintainer: Florent Bécart <florent.becart@gmail.com>
 Installed-Size: 2860
@@ -39,15 +19,15 @@ Vcs-Browser: https://github.com/fbecart/zinoma
 Vcs-Git: https://github.com/fbecart/zinoma
 
 Package: zinoma
-Version: 0.15.2
+Version: 0.15.1
 Architecture: amd64
 Maintainer: Florent Bécart <florent.becart@gmail.com>
 Installed-Size: 3525
-Filename: ./zinoma_0.15.2_amd64.deb
-Size: 1036060
-MD5sum: 76edcf5b7d6f1b827a721c0787d8a25e
-SHA1: 831e63f85686f1cb433f7b2ccb16b641af39092a
-SHA256: 87e410891f09fc9dd15b35d78ddb33114066b7ff6e5ea0fc536e82fc23f6fef5
+Filename: ./zinoma_0.15.1_amd64.deb
+Size: 1036292
+MD5sum: f1cc0ef4a773940002d54bb6cd3be066
+SHA1: 7d7a0ddd7d48d5f84b1485f27769c51c8dbfffd7
+SHA256: 87e90e8e696686db11b90de625f5fa985c67deb5738693ceed33e94b45156e00
 Section: utils
 Priority: optional
 Homepage: https://github.com/fbecart/zinoma
@@ -68,6 +48,26 @@ Size: 929106
 MD5sum: f7cc79e13f8b4f686880492a1f037108
 SHA1: 271b54370ffd26cf78818d05931dc5705d8a22cc
 SHA256: 00c141cc5fcb05385f4f109bed7084cf1d1797e3a70f4d0cd2312b5e9293375e
+Section: utils
+Priority: optional
+Homepage: https://github.com/fbecart/zinoma
+Description: Žinoma - Make your build flow incremental
+ Žinoma provides a simple command line to execute your most common build flows
+ in the most efficient way.
+Standards-Version: 3.9.4
+Vcs-Browser: https://github.com/fbecart/zinoma
+Vcs-Git: https://github.com/fbecart/zinoma
+
+Package: zinoma
+Version: 0.15.2
+Architecture: amd64
+Maintainer: Florent Bécart <florent.becart@gmail.com>
+Installed-Size: 3525
+Filename: ./zinoma_0.15.2_amd64.deb
+Size: 1036060
+MD5sum: 76edcf5b7d6f1b827a721c0787d8a25e
+SHA1: 831e63f85686f1cb433f7b2ccb16b641af39092a
+SHA256: 87e410891f09fc9dd15b35d78ddb33114066b7ff6e5ea0fc536e82fc23f6fef5
 Section: utils
 Priority: optional
 Homepage: https://github.com/fbecart/zinoma
@@ -188,6 +188,46 @@ Size: 1134924
 MD5sum: 0ea60cf8ef22ef88cdee3ed78515ff5c
 SHA1: 54079cd396cfba7456d4ea144ab424379f34c0dd
 SHA256: d01435fb72a701af3c70764e706190396cfa4b0fa8cd398a0d011f91edb5d55a
+Section: utils
+Priority: optional
+Homepage: https://github.com/fbecart/zinoma
+Description: Žinoma - Make your build flow incremental
+ Žinoma provides a simple command line to execute your most common build flows
+ in the most efficient way.
+Standards-Version: 3.9.4
+Vcs-Browser: https://github.com/fbecart/zinoma
+Vcs-Git: https://github.com/fbecart/zinoma
+
+Package: zinoma
+Version: 0.18.2
+Architecture: amd64
+Maintainer: Florent Bécart <florent.becart@gmail.com>
+Installed-Size: 3972
+Filename: ./zinoma_0.18.2_amd64.deb
+Size: 1155664
+MD5sum: a99f1899a325ad0912f5f2db4fefb81a
+SHA1: 72de2253e83f66cd0cfdfa636afc2ce5c447c1cf
+SHA256: a610b12bc84e9a10e29b311343da8437a4bec13c50125a1c34f27511348b0c68
+Section: utils
+Priority: optional
+Homepage: https://github.com/fbecart/zinoma
+Description: Žinoma - Make your build flow incremental
+ Žinoma provides a simple command line to execute your most common build flows
+ in the most efficient way.
+Standards-Version: 3.9.4
+Vcs-Browser: https://github.com/fbecart/zinoma
+Vcs-Git: https://github.com/fbecart/zinoma
+
+Package: zinoma
+Version: 0.18.2
+Architecture: i386
+Maintainer: Florent Bécart <florent.becart@gmail.com>
+Installed-Size: 3318
+Filename: ./zinoma_0.18.2_i386.deb
+Size: 1066258
+MD5sum: 355446c34d653c26dd666bad0a9cc6da
+SHA1: c650b204e482dac5c985ca2ee593dad6028e6489
+SHA256: 10ab8a8fcfef1daab89be98195dd856d4487300b8288dc0fdb01d01ccfc4d887
 Section: utils
 Priority: optional
 Homepage: https://github.com/fbecart/zinoma
